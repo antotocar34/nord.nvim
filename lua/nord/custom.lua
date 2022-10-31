@@ -27,6 +27,10 @@ function custom.editor(nord)
     return {
         VertSplit = { fg = nord.nord2_gui }, -- Set a border colour
         ColorColumn = { fg = nord.none, bg = nord.nord2_gui },
+        SpellBad = { fg = nord.nord11_gui },
+		SpellCap = { fg = nord.nord7_gui, bg = nord.none, style = "italic,undercurl" },
+		SpellLocal = { fg = nord.nord8_gui, bg = nord.none, style = "italic,undercurl" },
+		SpellRare = { fg = nord.nord9_gui, bg = nord.none, style = "italic,undercurl" },
         }
 end
 
@@ -92,8 +96,6 @@ function custom.syntax(nord)
         -- bibKey = { fg = nord.nord8_gui },
         -- bibEntryKw = { fg = nord.nord8_gui },
         -- bibVariable = { fg = nord.nord8_gui },
-
-        SpellBad = { fg = nord.nord11_gui },
     }
 end
 
