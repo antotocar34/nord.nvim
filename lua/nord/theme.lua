@@ -1,4 +1,5 @@
 local nord = require("nord.colors")
+local custom = require("nord.custom")
 
 local theme = {}
 
@@ -81,7 +82,7 @@ theme.loadSyntax = function()
 		syntax.String = { fg = nord.nord14_gui, bg = nord.none, style = "italic" } -- any string
 	end
 
-	return syntax
+	return custom.merge(syntax, custom.syntax(nord))
 end
 
 theme.loadEditor = function()
@@ -229,7 +230,7 @@ theme.loadEditor = function()
 		editor.DiffText = { fg = nord.nord15_gui, bg = nord.none, style = "reverse" } -- diff mode: Changed text within a changed line
 	end
 
-	return editor
+	return custom.merge(editor, custom.editor(nord))
 end
 
 theme.loadTerminal = function()
@@ -821,7 +822,7 @@ theme.loadPlugins = function()
 		AerialString = vim.g.nord_italic and { fg = nord.nord14_gui, style = "italic" } or { fg = nord.nord14_gui },
 		AerialStruct = { fg = nord.nord9_gui },
 		AerialTypeParameter = { fg = nord.nord10_gui },
-		AerialVariable = { fg = nord.nord4_gui, style = "bold" },
+		AerialVariable = { fg = nord.nord4_gui, style = "bold" }
 	}
 	-- Options:
 
@@ -838,7 +839,7 @@ theme.loadPlugins = function()
 		plugins.NvimTreeNormal = { fg = nord.nord4_gui, bg = nord.none }
 	end
 
-	return plugins
+	return custom.merge(plugins, custom.plugins(nord))
 end
 
 return theme
