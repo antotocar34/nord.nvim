@@ -99,4 +99,63 @@ function custom.syntax(nord)
     }
 end
 
+function custom.treesitter()
+    return {
+		TSConstructor = {}, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+		TSConstant = {}, -- For constants
+		TSFloat = {}, -- For floats
+		TSNumber = {}, -- For all number
+		TSAttribute = {}, -- (unstable) TODO: docs
+		TSError = {}, -- For syntax/parser errors.
+		TSException = {}, -- For exception related keywords.
+		TSFuncMacro = {}, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+		TSInclude = {}, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+		TSLabel = {}, -- For labels: `label:` in C and `:label:` in Lua.
+		TSOperator = {}, -- For any operator: `+`, but also `->` and `*` in C.
+		TSParameter = {}, -- For parameters of a function.
+		TSParameterReference = {}, -- For references to parameters of a function.
+		TSPunctDelimiter = {}, -- For delimiters ie: `.`
+		TSPunctBracket = {}, -- For brackets and parens.
+		TSPunctSpecial = {}, -- For special punctutation that does not fall in the catagories before.
+		TSSymbol = {}, -- For identifiers referring to symbols or atoms.
+		TSType = {}, -- For types.
+		TSTypeBuiltin = {}, -- For builtin types.
+		TSTag = {}, -- Tags like html tag names.
+		TSTagDelimiter = {}, -- Tag delimiter like `<` `>` `/`
+		TSText = {}, -- For strings considenord11_gui text in a markup language.
+		TSTextReference = {}, -- FIXME
+		TSEmphasis = {}, -- For text to be represented with emphasis.
+		TSUnderline = {}, -- For text to be represented with an underline.
+		TSLiteral = {}, -- Literal text.
+		TSURI = {}, -- Any URI like a link or email.
+		TSAnnotation = {}, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
+		["@constructor"] = {},
+		["@constant"] = {},
+		["@float"] = {},
+		["@number"] = {},
+		["@attribute"] = {},
+		["@error"] = {},
+		["@exception"] = {},
+		["@funtion.macro"] = {},
+		["@include"] = {},
+		["@label"] = {},
+		["@operator"] = {},
+		["@parameter"] = {},
+		["@punctuation.delimiter"] = {},
+		["@punctuation.bracket"] = {},
+		["@punctuation.special"] = {},
+		["@symbol"] = {},
+		["@type"] = {},
+		["@type.builtin"] = {},
+		["@tag"] = {},
+		["@tag.delimiter"] = {},
+		["@text"] = {},
+		["@text.reference"] = {},
+		["@text.emphasis"] = {},
+		["@text.underline"] = {},
+		["@text.literal"] = {},
+		["@text.uri"] = {},
+    }
+end
+
 return custom

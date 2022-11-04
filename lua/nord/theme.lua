@@ -444,7 +444,7 @@ theme.loadTreeSitter = function()
 		treesitter["@character"] = { fg = nord.nord14_gui, style = "italic" }
 	end
 
-	return treesitter
+	return custom.merge(treesitter, custom.treesitter(nord))
 end
 
 theme.loadFiletypes = function()
