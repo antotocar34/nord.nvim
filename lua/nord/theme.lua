@@ -257,7 +257,7 @@ theme.loadTreeSitter = function()
 
 	local treesitter = {
 		TSConstructor = { fg = nord.nord9_gui }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-		TSConstant = { fg = nord.nord13_gui }, -- For constants
+		TSConstant = { fg = nord.nord4_gui }, -- For constants
 		TSFloat = { fg = nord.nord15_gui }, -- For floats
 		TSNumber = { fg = nord.nord15_gui }, -- For all number
 		TSAttribute = { fg = nord.nord15_gui }, -- (unstable) TODO: docs
@@ -285,19 +285,19 @@ theme.loadTreeSitter = function()
 		TSURI = { fg = nord.nord14_gui }, -- Any URI like a link or email.
 		TSAnnotation = { fg = nord.nord11_gui }, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
 		["@constructor"] = { fg = nord.nord9_gui },
-		["@constant"] = { fg = nord.nord13_gui },
+		["@constant"] = { fg = nord.nord4_gui },
 		["@float"] = { fg = nord.nord15_gui },
 		["@number"] = { fg = nord.nord15_gui },
 		["@attribute"] = { fg = nord.nord15_gui },
 		["@error"] = { fg = nord.nord11_gui },
-		["@exception"] = { fg = nord.nord15_gui },
+		["@exception"] = { fg = nord.nord9_gui },
 		["@funtion.macro"] = { fg = nord.nord7_gui },
 		["@include"] = { fg = nord.nord9_gui },
 		["@label"] = { fg = nord.nord15_gui },
 		["@operator"] = { fg = nord.nord9_gui },
-		["@parameter"] = { fg = nord.nord10_gui },
+		["@parameter"] = { fg = nord.nord4_gui },
 		["@punctuation.delimiter"] = { fg = nord.nord8_gui },
-		["@punctuation.bracket"] = { fg = nord.nord8_gui },
+		["@punctuation.bracket"] = { fg = nord.nord4_gui },
 		["@punctuation.special"] = { fg = nord.nord8_gui },
 		["@symbol"] = { fg = nord.nord15_gui },
 		["@type"] = { fg = nord.nord9_gui },
@@ -392,9 +392,9 @@ theme.loadTreeSitter = function()
 		treesitter["@field"] = { fg = nord.nord4_gui }
 		treesitter["@property"] = { fg = nord.nord10_gui }
 		treesitter["@keyword"] = { fg = nord.nord9_gui }
-		treesitter["@keyword.function"] = { fg = nord.nord8_gui }
-		treesitter["@keyword.return"] = { fg = nord.nord8_gui }
-		treesitter["@keyword.operator"] = { fg = nord.nord8_gui }
+		treesitter["@keyword.function"] = { fg = nord.nord9_gui }
+		treesitter["@keyword.return"] = { fg = nord.nord9_gui }
+		treesitter["@keyword.operator"] = { fg = nord.nord9_gui }
 		treesitter["@repeat"] = { fg = nord.nord9_gui }
 		treesitter["@string"] = { fg = nord.nord14_gui }
 		treesitter["@string.regex"] = { fg = nord.nord7_gui }
