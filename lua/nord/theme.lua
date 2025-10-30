@@ -642,7 +642,7 @@ theme.loadPlugins = function()
 		Headline5 = { fg = nord.nord15_gui, bg = "#3a3c4a", bold = true },
 		Headline6 = { fg = nord.nord4_gui, bg = "#3d434f", bold = true },
 
-		Quote = { fg = nord.nord2_gui },
+		Quote = { fg = nord.nord3_gui_bright },
 		CodeBlock = { bg = nord.nord1_gui },
 		Dash = { nord.nord10_gui, bold = true },
 
